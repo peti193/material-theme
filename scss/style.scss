@@ -1,0 +1,53 @@
+/*
+ * SMACSS + SCSS starter v2.0
+ * Inspired by SMACSS http://smacss.com
+ * Author: @jonathanpath
+ * Date: 11 July 2013
+ *
+ * https://github.com/jonathanpath/SASS-SMACSS
+ * See file structure in http://jonathanpath.com/sass+smacss/scss/style.scss
+ * Sass Structure inspired by : https://github.com/sutter/POPY-starter-HTML-SCSS
+ *
+ * Coding rules : https://github.com/necolas/idiomatic-css
+ *
+ */
+
+/* Compass */
+@import "compass/css3";
+
+/* Tools */
+@import "tools/functions";
+@import "tools/site-settings";
+@import "tools/mixins";
+@import "tools/helpers";
+@import "tools/font_awesome/font-awesome";
+
+/* Base */
+@import "base/normalize";
+@import "base/base";
+@import "base/form";
+
+/* Fonts */
+//@import "fonts/...";
+
+/* Layout */
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+@import "layout/constrained";
+
+/* Modules */
+@import "modules/btn";
+@import "modules/icons";
+@import "modules/animations";
+
+
+//Global style
+* {
+	@include box-sizing(border-box);
+}
+
+//Material design
+@import "modules/file-manager";
+@import "modules/off-canvas";
+

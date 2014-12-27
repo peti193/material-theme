@@ -1,0 +1,55 @@
+/* ===========================
+   Base
+   =========================== */
+
+body {
+    font-family: $droid;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: $color-link;
+    text-decoration: none;
+    @include transition();
+
+    &:hover {
+        color: $color-link-hover;
+    }
+}
+
+::-moz-selection {
+    background: $color1;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: $color1;
+    color: #fff;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style-type: none;
+    }
+}
