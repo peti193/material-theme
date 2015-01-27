@@ -21,11 +21,13 @@
 @import "tools/mixins";
 @import "tools/helpers";
 @import "tools/font_awesome/font-awesome";
+@import "tools/font_awesome/font-awesome";
+@import "tools/material-icons/material-design-iconic-font";
 
 /* Base */
 @import "base/normalize";
 @import "base/base";
-@import "base/form";
+//@import "base/form";
 
 /* Fonts */
 //@import "fonts/...";
@@ -50,4 +52,5 @@
 //Material design
 @import "modules/file-manager";
 @import "modules/off-canvas";
+@import "modules/ripple";
 

@@ -1,0 +1,99 @@
+// Form style
+
+.form-wrapper {
+	display: none;
+	padding: 20px;
+	.close-wrapper {
+		@include clearfix();
+
+		.close-content {
+			float: right;
+			color: $white;
+			font-weight: bold;
+		}
+	}
+
+	.group {
+		position: relative;
+		margin-bottom: 45px;
+
+		input,
+		label {
+			font-size: 18px;
+		}
+
+
+		.bar {
+			position: relative;
+			display: block;
+			width: 100%;
+
+			&:before,
+			&:after {
+				content: '';
+				height: 2px;
+				width: 0;
+				bottom: 0;
+				position: absolute;
+				background: #5264AE;
+				@include transition(0.2s ease all);
+			}
+
+			&:after {
+				right: 50%;
+			}
+
+			&:before {
+				left: 50%;
+			}
+		}
+
+		input {
+			padding: 10px;
+			display: block;
+			width: 100%;
+			border: none;
+			outline: none;
+			border-bottom: 1px solid $white;
+			background-color: transparent;
+
+			&:focus {
+				outline: none;
+
+				~ label {
+					@include transform(translateY(-30px));
+					font-size: 14px;
+					color: $black;
+				}
+
+				~ .bar {
+					&:before {
+						width: 50%;
+					}
+
+					&:after {
+						width: 50%;
+					}
+				}
+			}
+
+			&:valid {
+				~ label {
+					@include transform(translateY(-30px));
+					font-size: 14px;
+					color: $black;
+				}
+			}
+		}
+
+		label {
+			color: $white;
+			font-weight: normal;
+			position: absolute;
+			pointer-events: none;
+			left: 5px;
+			top: 10px;
+			@include transition(0.2s ease all);
+		}
+	}
+}

@@ -1,28 +1,24 @@
 /*
-Error: Undefined mixin 'transform'.
-        on line 15 of /var/www/html/portfolio/scss/modules/off-canvas.scss, in `transform'
-        from line 15 of /var/www/html/portfolio/scss/modules/off-canvas.scss
+Error: Undefined variable: "$white".
+        on line 23 of /var/www/html/portfolio/scss/modules/off-canvas.scss
 
-10: .site-canvas {
-11: 	width: 100%;
-12: 	height: 100%;
-13: 	position: relative;
-14: 
-15: 	@include transform(translateX(0));
-16: 	@include transition(all 0.3s ease-in-out);
-17: }
-18: 
-19: .site-menu {
-20: 	width: 300px;
+18: 	width: 250px;
+19: 	height: 100%;
+20: 	position: absolute;
+21: 	top: 0;
+22: 	left: -250px;
+23: 	background-color: $white;
+24: 	color: $white;
+25: 	z-index: 100;
+26: 	@include transform(translateX(0));
+27: 	@include transition(all 0.3s ease-in-out);
+28: 
 
 Backtrace:
-/var/www/html/portfolio/scss/modules/off-canvas.scss:15:in `transform'
-/var/www/html/portfolio/scss/modules/off-canvas.scss:15
-/var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/stack.rb:98:in `with_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+/var/www/html/portfolio/scss/modules/off-canvas.scss:23
+/var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
 /var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /var/lib/gems/1.9.1/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
@@ -71,4 +67,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transform'.\A         on line 15 of /var/www/html/portfolio/scss/modules/off-canvas.scss, in `transform'\A         from line 15 of /var/www/html/portfolio/scss/modules/off-canvas.scss\A \A 10: .site-canvas {\A 11: 	width: 100%;\A 12: 	height: 100%;\A 13: 	position: relative;\A 14: \A 15: 	@include transform(translateX(0));\A 16: 	@include transition(all 0.3s ease-in-out);\A 17: }\A 18: \A 19: .site-menu {\A 20: 	width: 300px;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 23 of /var/www/html/portfolio/scss/modules/off-canvas.scss\A \A 18: 	width: 250px;\A 19: 	height: 100%;\A 20: 	position: absolute;\A 21: 	top: 0;\A 22: 	left: -250px;\A 23: 	background-color: $white;\A 24: 	color: $white;\A 25: 	z-index: 100;\A 26: 	@include transform(translateX(0));\A 27: 	@include transition(all 0.3s ease-in-out);\A 28: "; }

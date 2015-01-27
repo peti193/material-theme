@@ -2,8 +2,13 @@
    Moduales/File manager
    ======================= */
 
+.file-manager-main {
+	position: relative;
+}
+
 .file-manager-header {
 	position: relative;
+	z-index: 3;
 	background-color: $Deep_orange;
 	color: $white;
 	padding: 20px;
@@ -21,35 +26,29 @@
 	.plus-icon {
 		position: absolute;
 		right: 20px;
-		display: block;
 		width: 40px;
 		height: 40px;
 		background-color: $lBlue;
 		text-align: center;
 		@include border-radius(50%);
 		@include box-shadow(rgba($black, .2) 0px 3px 10px);
+		// Important because velocity fadeIn animation overwrite this display property
+		display: table!important;
 
-		&:before {
-			@include icon($fa-var-plus);
-			color: $white;
-			font-size: 18px;
-			line-height: 40px;
-		}
-
-		&:hover {
-			@include animation(spin .3s linear);
+		.icon {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
 		}
 	}
 
 	.nav-bar-bottom {
 		font-size: 24px;
 	}
-
-	.fa {
-		display: inline;
+	.md {
 		color: $white;
-		font-size: 20px;
-		text-align: left;
+		line-height: 1;
+		font-size: 1.5em;
 
 		&.hamburger-menu {
 			float: left;
@@ -135,6 +134,10 @@
 				background-color: $amber;
 			}
 
+			&.red {
+				background-color: $red;
+			}
+
 			&.cyan {
 				background-color: $cyan;
 			}
@@ -151,10 +154,7 @@
 			width: 20px;
 			height: 20px;
 			text-align: center;
-			color: $white;
-			font-size: 12px;
-			background-color: $divider-color;
-			@include border-radius(50%);
+			color: $divider-color;
 		}
 	}
 }

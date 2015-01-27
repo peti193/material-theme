@@ -3,53 +3,56 @@
    =========================== */
 
 body {
-    font-family: $droid;
-    font-weight: 300;
-    font-size: 1em;
-    line-height: 1.5;
+	font-family: $droid;
+	font-weight: 300;
+	font-size: $text-size-base;
+	line-height: 1;
+	-ms-overflow-x: hidden;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-size: 16px;
 }
 
 a {
-    color: $color-link;
-    text-decoration: none;
-    @include transition();
+	color: $color-link;
+	text-decoration: none;
+	@include transition();
 
-    &:hover {
-        color: $color-link-hover;
-    }
+	&:hover {
+		color: $color-link-hover;
+	}
 }
 
 ::-moz-selection {
-    background: $color1;
-    color: #fff;
-    text-shadow: none;
+	background: $color1;
+	color: #fff;
+	text-shadow: none;
 }
 ::selection {
-    background: $color1;
-    color: #fff;
-    text-shadow: none;
+	background: $white;
+	color: $black;
+	text-shadow: none;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
-    li {
-        list-style-type: none;
-    }
+	li {
+		list-style-type: none;
+	}
 }

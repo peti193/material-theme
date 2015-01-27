@@ -12,9 +12,5 @@ App.config(function($routeProvider) {
 		.when('/about', {
 			templateUrl : 'templates/android/file-manager.html'
 		})
-
-		.when('/contact', {
-			templateUrl : 'templates/android/file-manager.html'
-		});
 });
 
