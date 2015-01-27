@@ -1,7 +1,7 @@
-Sass + SMACSS
+Material Design
 ==============
 
-To start your project with Sass. Inspired by SMACSS from Jonathan Snook. To know more, go to : http://smacss.com
+Material Design Theme from peti193
 
 Based on
 ==
@@ -13,6 +13,4 @@ Based on
 
 Team
 ==
-Jonathan Path @jonathanpath / http://jonathanpath.com
-
-Laurent Sutterlity @sutterlity / http://sutterlity.fr
+peti193 fedevelop@gmail.com
